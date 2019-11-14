@@ -74,18 +74,18 @@ for x in range(0, 50):
 		ballots = getBallots()
 	else:
 		ballots = getBallots(winners)
-		try:
-			winner = vote(ballots)
-			print(str(x+1) + ": " + str(winner))
+	try:
+		winner = vote(ballots)
+		print(str(x+1) + ": " + str(winner))
 			
-			#print(type(winner))
+		#print(type(winner))
 			
-			if type(winner) is set:
-				for val in winner:
-					winners.append(val)
-			else:
-				winners.append(winner)
-		except:
-			sleep(0) #lazy way of preventing EOF
+		if type(winner) is set:
+			for val in winner:
+				winners.append(val)
+		else:
+			winners.append(winner)
+	except:
+		sleep(0) #lazy way of preventing EOF
 	
 	
