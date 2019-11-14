@@ -18,4 +18,9 @@ The candidates all take joint position
 ~~Joint positions for candidates that draw with one another. Removing the random choice as a winner for the next round affects the future ordering of candidates, in this case, the drawing winners should all be given the same ranking and all be removed.~~
 
 More voting methods
+
+
 Text based UI
+
+
+Remove specification from loop, just print until voting has finished and then stop
