@@ -6,6 +6,9 @@ from time import sleep
 
 def vote(ballots):
 	output = SchulzeMethod(ballots, ballot_notation = CondorcetHelper.BALLOT_NOTATION_GROUPING).as_dict()
+	if 'tied_winners' in output.keys():
+		#print(output['tied_winners'])
+		return output['tied_winners']
 	return output['winner']
 
 def getBallots(removeWinners=""):
@@ -49,6 +52,15 @@ for x in range(0, 25):
 	else:
 		ballots = getBallots(winners)
 	winner = vote(ballots)
-	print(str(x+1) + ": " + winner)
-	winners.append(winner)
+	print(str(x+1) + ": " + str(winner))
+	
+	#print(type(winner))
+	
+	if type(winner) is set:
+		for val in winner:
+			winners.append(val)
+	else:
+		winners.append(winner)
+		
+	
 	
