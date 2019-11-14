@@ -11,7 +11,11 @@ This software takes a list of rankings and executes 25 rounds of [Schulze Method
 4. The winner is removed from all lists and then the Schulze method is executed until no more candidates remain, the winner of each of these *master rounds* is then the next on the master list.
 
 # What if there's a draw?
-Picks them at random I think 👀
+~~Picks them at random I think 👀~~
+The candidates all take joint position
 
 # To do
-Joint positions for candidates that draw with one another. Removing the random choice as a winner for the next round affects the future ordering of candidates, in this case, the drawing winners should all be given the same ranking and all be removed.
+~~Joint positions for candidates that draw with one another. Removing the random choice as a winner for the next round affects the future ordering of candidates, in this case, the drawing winners should all be given the same ranking and all be removed.~~
+
+More voting methods
+Text based UI
